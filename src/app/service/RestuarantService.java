@@ -9,7 +9,8 @@ public class RestuarantService {
         public Restuarant addRestaurants(){
 
 
-                Dishes dishes=new Dishes();
+              List<Dishes>  dishes1=new ArrayList<>();
+               Dishes dishes=new Dishes();
 
 
 
@@ -58,7 +59,9 @@ public class RestuarantService {
                 address.flatNo="3-24";
                 restuarant.name="Mehifill";
                 restuarant.address=address;
-                restuarant.dishes= (List<Dishes>) dishes;
+                dishes1.add(dishes);
+           // List<Dishes> dishes1 = null;
+            restuarant.dishes=dishes1;
              return restuarant;
 
 

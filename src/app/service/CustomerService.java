@@ -2,18 +2,16 @@ package app.service;
 
 import app.model.Address;
 import app.model.Customer;
-import app.model.Order;
 import app.model.Registration;
-import java.util.Scanner;
 
-import java.util.UUID;
+import java.util.Scanner;
 
 public class CustomerService {
 
     public static void main(String[] args) {
 
 
-//        public Customer getRegistration () {
+    //   public Customer getRegistration () {
 //
 
             Customer customer = new Customer();
@@ -24,7 +22,7 @@ public class CustomerService {
             System.out.print("Enter Your mobileNo : ");
             registration.mobileNo = scanner.nextLine();
 
-            System.out.println(registration.otp);
+            System.out.println("otp "+registration.otp);
             registration.enterOtp = scanner.nextLine();
             registration.login();
             Address address = new Address();
@@ -36,16 +34,21 @@ public class CustomerService {
             customer.address = address;
 
         System.out.println(customer);
+        RestuarantService restuarantService = new RestuarantService();
+        System.out.println(restuarantService.addRestaurants());
 
 
-//            return customer;
-//
+        //    return customer;
+
         }
-        public RestuarantService addToCart () {
-            RestuarantService restuarantService = new RestuarantService();
-            restuarantService.addRestaurants().dishes.get(0);
-            return restuarantService;
+       // public RestuarantService addToCart () {
+           // RestuarantService restuarantService = new RestuarantService();
+          // Dishes result= restuarantService.addRestaurants().dishes.get(1);
+          //  System.out.println(result);
+           // System.out.println(restuarantService.addRestaurants());
+          //  return restuarantService;
         }
-//    }
-//
-}
+
+ //  }
+
+//}

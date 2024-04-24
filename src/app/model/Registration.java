@@ -27,7 +27,7 @@ public class Registration {
     public boolean login(){
         if (this.enterOtp.equals(this.otp)) {
             System.out.println("SuccessFully Login");
-         return true;
+         return true ;
         }
         System.out.println("LoginFailedPlease Try again");
         return false;
